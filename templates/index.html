@@ -1,57 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pneumonia Detection</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
-            background-color: #f0f4f8;
-        }
-        form {
-            margin-bottom: 20px;
-        }
-        .upload-box {
-            padding: 20px;
-            border: 2px dashed #ccc;
-            background-color: #fff;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        img {
-            margin-top: 20px;
-            max-width: 500px;
-            border: 1px solid #ccc;
-        }
-        .prediction {
-            font-size: 20px;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Pneumonia Detection from Chest X-ray</h1>
-    <div class="upload-box">
-        <form method="POST" enctype="multipart/form-data">
-            <input type="file" name="imagefile" required>
-            <br><br>
-            <button type="submit">Predict</button>
-        </form>
-    </div>
-
-    {% if prediction %}
-        <div class="prediction">
-            Result: {{ prediction }}
-        </div>
-        <h3>Original Image:</h3>
-        <img src="{{ imagePath }}" alt="Uploaded Image">
-
-        <h3>Grad-CAM Visualization:</h3>
-        <img src="{{ gradcamPath }}" alt="Grad-CAM Image">
-    {% endif %}
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %}Home | RadiantAI{% endblock %}
+{% block content %}
+<div class="max-w-4xl mx-auto text-center mt-20">
+  <h1 class="text-4xl font-bold text-blue-700 mb-4">Early Detection Saves Lives</h1>
+  <p class="text-lg text-gray-600 mb-6">
+    Welcome to RadiantAI — a simple, smart pneumonia detection tool using chest X-rays and AI.
+  </p>
+  <a href="/analyze" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-6 py-3 rounded-lg transition">
+    Start Diagnosis
+  </a>
+</div>
+{% endblock %}

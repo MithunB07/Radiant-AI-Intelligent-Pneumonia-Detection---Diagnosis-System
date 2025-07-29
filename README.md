@@ -149,10 +149,10 @@ Want to improve this project? Here’s how:
 
 ## 👨‍💻 Authors
 
-- **[Jayashri Krishnan]**
-- **[Mithun B ]** 
-- **[Kiran Kumar AJ]**
-- **[Dharini S]**
+- **Jayashri Krishnan**
+- **Mithun B ** 
+- **Kiran Kumar AJ**
+- **Dharini S**
 
 ---
 

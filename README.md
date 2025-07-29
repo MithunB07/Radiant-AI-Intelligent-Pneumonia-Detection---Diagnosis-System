@@ -149,9 +149,10 @@ Want to improve this project? Here’s how:
 
 ## 👨‍💻 Authors
 
-- **[Your Name Here]** – *Project Lead / Developer*
-- **[Collaborator Name]** – *Model Trainer / Research*
-- **[Your Email or GitHub Links]** *(optional)*
+- **[Jayashri Krishnan]**
+- **[Mithun B ]** 
+- **[Kiran Kumar AJ]**
+- **[Dharini S]**
 
 ---
 
